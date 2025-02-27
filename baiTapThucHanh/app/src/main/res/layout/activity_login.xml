@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login page"
+            style="@style/CustomHeader"
+            android:background="#5DE2E7"
+            android:textColor="#000000"/>
+        <include
+            android:id="@+id/tenDangNhapInclude"
+            layout="@layout/custom_input_field" />
+        <include
+            android:id="@+id/matKhauInclude"
+            layout="@layout/custom_input_field" />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu thông tin"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginRight="50dp"
+            android:layout_marginVertical="20dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/dangNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="đăng nhập"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"/>
+            <Button
+                android:id="@+id/thoat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thoát"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

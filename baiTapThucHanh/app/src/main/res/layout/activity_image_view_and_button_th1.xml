@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".imageViewAndButton_TH1">
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:padding="10dp"
+        android:text="Using Image"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cities of Viet Nam"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+        <ImageButton
+            android:id="@+id/superior"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/superior"
+            android:contentDescription="superior.jpg"/>
+        <ImageButton
+            android:id="@+id/superior1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/superior1"
+            android:contentDescription="superior.jpg" />
+        <ImageButton
+            android:id="@+id/superior2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/superior2"
+            android:contentDescription="superior2"/>
+        <ImageButton
+            android:id="@+id/superior3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/superior3"
+            android:contentDescription="superior3"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ha Noi City"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginVertical="20dp"/>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:src="@drawable/superior"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

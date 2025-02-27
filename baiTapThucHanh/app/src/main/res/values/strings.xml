@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">baiTapThucHanh</string>
+    <string name="action_about">Gioi thieu </string>
+    <string name="action_settings">Cai dat</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/danhBa"
+        android:title="Xem danh bạ" />
+
+    <item
+        android:id="@+id/thuVienAnh"
+        android:title="Xem thư viện ảnh" />
+    <item
+        android:id="@+id/tinNhan"
+        android:title="Xem tin nhắn SMS" />
+    <item
+        android:id="@+id/loginAct"
+        android:title="Mở LoginActivity" />
+    <item
+        android:id="@+id/exit"
+        android:title="Thoát" />
+</menu>
